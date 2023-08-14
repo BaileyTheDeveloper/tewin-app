@@ -15,14 +15,14 @@ img {
 	transition: transform 0.2s ease; /* Add a smooth transition */
 }
 
-h1 {
+.overlayLink h1 {
 	font-size: 48px;
 	position: absolute;
 	right: 47vw;
 	top: 45vh;
 	z-index: 1;
 	color: rgb(6, 4, 141); /* Set the text color */
-	font-family: 'Lilita One', cursive;
+	font-family: "Lilita One", cursive;
 }
 
 .overlayLink {
@@ -40,3 +40,5 @@ h1 {
 		rgba(90, 110, 161, 1) 100%
 	);
 }
+
+

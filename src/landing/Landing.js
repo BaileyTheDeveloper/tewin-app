@@ -9,7 +9,6 @@ function Landing() {
 	const handleMouseMove = (event) => {
 		const centerX = window.innerWidth / 2;
 		const centerY = window.innerHeight / 2;
-
 		const offsetX = (centerX - event.clientX) * 0.04; // Adjust the multiplier to control the movement intensity
 		const offsetY = (centerY - event.clientY) * 0.04;
 
@@ -36,7 +35,7 @@ function Landing() {
 						transform: `translate(${position.x}px, ${position.y}px)`,
 					}}
 				>
-					<img src={cloud} alt="cloud" />
+					<img src={cloud} alt="cloud"/>
 				</div>
 			</div>
 		</div>

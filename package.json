@@ -1,13 +1,12 @@
 {
 	"name": "tewin-app",
 	"version": "0.1.0",
-  "homepage": "https://username.github.io/tewin-app",
+	"homepage": "https://baileythedeveloper.github.io/tewin-app",
 	"private": true,
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.17.0",
 		"@testing-library/react": "^13.4.0",
 		"@testing-library/user-event": "^13.5.0",
-		"gh-pages": "^5.0.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-router-dom": "^6.14.2",
@@ -19,7 +18,8 @@
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"deploy": "gh-pages -b main -d build"
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
 	"eslintConfig": {
 		"extends": [
@@ -38,5 +38,8 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
+	},
+	"devDependencies": {
+		"gh-pages": "^6.0.0"
 	}
 }

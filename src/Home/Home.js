@@ -1,6 +1,9 @@
+import CurrentWeather from "./CurrentWeather/CurrentWeather";
 function Home() {
     return (
-        <h1>Home</h1>
+        <div>
+        <CurrentWeather />
+        </div>
     )
 }
 export default Home;
