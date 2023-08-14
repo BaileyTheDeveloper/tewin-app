@@ -1,0 +1,44 @@
+.landingPage {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+img {
+	margin-top: 0; /* Remove margin-top */
+	height: 45vh;
+	width: auto;
+	z-index: 2;
+	transition: transform 0.2s ease; /* Add a smooth transition */
+}
+
+.overlayLink h1 {
+	font-size: 48px;
+	position: absolute;
+	right: 47vw;
+	top: 45vh;
+	z-index: 1;
+	color: rgb(6, 4, 141); /* Set the text color */
+	font-family: "Lilita One", cursive;
+}
+
+.overlayLink {
+	text-decoration: none;
+	color: inherit;
+	z-index: 2;
+}
+
+.landingPage {
+	background: rgb(2, 17, 66);
+	background: linear-gradient(
+		0deg,
+		rgba(2, 17, 66, 1) 0%,
+		rgba(13, 14, 123, 1) 55%,
+		rgba(90, 110, 161, 1) 100%
+	);
+}
+
+
