@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Landing from "./landing/Landing"
+import Landing from "./landing/Landing";
 import Home from "./Home/Home";
 import Forecast from "./Home/Forecast/Forecast";
 

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./currentweather.css";
 
 function CurrentWeather() {
 	const [currentTemp, setCurrentTemp] = useState(null); // Initialize with null
@@ -27,10 +28,12 @@ function CurrentWeather() {
 	}, []);
 
 	return (
-		<div>
+		<section className="current-container">
 			<h1>Current temperature in {CurrentCity}</h1>
-			<h1>{currentTemp !== null ? `${currentTemp} °F` : "Loading..."}</h1>
-		</div>
+			<h1 id="current-temp">
+				{currentTemp !== null ? `${currentTemp}°F` : "Loading..."}
+			</h1>
+		</section>
 	);
 }
 

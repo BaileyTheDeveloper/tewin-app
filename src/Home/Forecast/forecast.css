@@ -8,13 +8,7 @@
 	flex-direction: row;
 	justify-content: space-evenly;
 	text-align: center;
-	background: rgb(2, 17, 66);
-	background: linear-gradient(
-		0deg,
-		rgba(2, 17, 66, 1) 0%,
-		rgba(13, 14, 123, 1) 55%,
-		rgba(90, 110, 161, 1) 100%
-	);
+	
 }
 
 .forecastContainer {
