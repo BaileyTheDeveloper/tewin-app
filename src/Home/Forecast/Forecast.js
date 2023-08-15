@@ -3,7 +3,6 @@ import "./forecast.css";
 
 function Forecast() {
 	const [Forecast, setForecast] = useState([]);
-	const [CurrentCity, setCurrentCity] = useState();
 
 	useEffect(() => {
 		const url =
