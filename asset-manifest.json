@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/tewin-app/static/css/main.bda9058f.css",
-    "main.js": "/tewin-app/static/js/main.6d4e4150.js",
+    "main.js": "/tewin-app/static/js/main.3fb0b60a.js",
     "static/js/787.ca9caaa0.chunk.js": "/tewin-app/static/js/787.ca9caaa0.chunk.js",
     "static/media/cloud1.png": "/tewin-app/static/media/cloud1.fe92c4506f4a4ad36a0f.png",
     "index.html": "/tewin-app/index.html",
     "main.bda9058f.css.map": "/tewin-app/static/css/main.bda9058f.css.map",
-    "main.6d4e4150.js.map": "/tewin-app/static/js/main.6d4e4150.js.map",
+    "main.3fb0b60a.js.map": "/tewin-app/static/js/main.3fb0b60a.js.map",
     "787.ca9caaa0.chunk.js.map": "/tewin-app/static/js/787.ca9caaa0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bda9058f.css",
-    "static/js/main.6d4e4150.js"
+    "static/js/main.3fb0b60a.js"
   ]
 }
