@@ -7,7 +7,7 @@ function Forecast() {
 
 	useEffect(() => {
 		const url =
-			"http://api.weatherapi.com/v1/forecast.json?key=6be74bb2ba6f4ad6a3121019231208&q=65807&days=3&aqi=no&alerts=no";
+			"https://api.weatherapi.com/v1/forecast.json?key=6be74bb2ba6f4ad6a3121019231208&q=65807&days=3&aqi=no&alerts=no";
 
 		const fetchData = async () => {
 			try {

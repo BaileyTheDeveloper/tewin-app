@@ -7,7 +7,7 @@ function CurrentWeather() {
 
 	useEffect(() => {
 		const url =
-			"http://api.weatherapi.com/v1/current.json?key=6be74bb2ba6f4ad6a3121019231208&q=65807&aqi=no"; // Replace with your API key
+			"https://api.weatherapi.com/v1/current.json?key=6be74bb2ba6f4ad6a3121019231208&q=65807&aqi=no"; // Replace with your API key
 
 		const fetchData = async () => {
 			try {
