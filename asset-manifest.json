@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/tewin-app/static/css/main.dd641571.css",
-    "main.js": "/tewin-app/static/js/main.2b7aaa79.js",
-    "static/js/787.ca9caaa0.chunk.js": "/tewin-app/static/js/787.ca9caaa0.chunk.js",
-    "static/media/cloud1.png": "/tewin-app/static/media/cloud1.fe92c4506f4a4ad36a0f.png",
-    "index.html": "/tewin-app/index.html",
-    "main.dd641571.css.map": "/tewin-app/static/css/main.dd641571.css.map",
-    "main.2b7aaa79.js.map": "/tewin-app/static/js/main.2b7aaa79.js.map",
-    "787.ca9caaa0.chunk.js.map": "/tewin-app/static/js/787.ca9caaa0.chunk.js.map"
+    "main.css": "/static/css/main.dd641571.css",
+    "main.js": "/static/js/main.cb6803bd.js",
+    "static/js/787.ca9caaa0.chunk.js": "/static/js/787.ca9caaa0.chunk.js",
+    "static/media/cloud1.png": "/static/media/cloud1.fe92c4506f4a4ad36a0f.png",
+    "index.html": "/index.html",
+    "main.dd641571.css.map": "/static/css/main.dd641571.css.map",
+    "main.cb6803bd.js.map": "/static/js/main.cb6803bd.js.map",
+    "787.ca9caaa0.chunk.js.map": "/static/js/787.ca9caaa0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dd641571.css",
-    "static/js/main.2b7aaa79.js"
+    "static/js/main.cb6803bd.js"
   ]
 }
