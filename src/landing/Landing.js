@@ -25,7 +25,7 @@ function Landing() {
 
 	return (
 		<div className="landingPage">
-			<Link to="/home" className="overlayLink">
+			<Link to="/tewin-app/home" className="overlayLink">
 				<h1 className="overlayText">Enter</h1>
 			</Link>
 			<div className="imageWrapper">

@@ -8,9 +8,8 @@ function App() {
 	return (
 		<Router>
 			<Routes>
-				<Route path="/" element={<Landing />} />
-				<Route exact path="/home" element={<Home />} />
-				<Route exact path="/forecast" element={<Forecast />} />
+				<Route path="/tewin-app" element={<Landing />} />
+				<Route exact path="/tewin-app/home" element={<Home />} />
 			</Routes>
 		</Router>
 	);
