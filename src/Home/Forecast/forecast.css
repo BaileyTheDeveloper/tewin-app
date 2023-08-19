@@ -8,11 +8,10 @@
 	flex-direction: row;
 	justify-content: space-evenly;
 	text-align: center;
-	
 }
 
 .forecastContainer {
-    color:white;
+	color: white;
 	height: 15vh;
 	margin-left: 55px;
 	margin-right: 55px;

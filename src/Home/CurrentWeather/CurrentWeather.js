@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./currentweather.css";
 
-function CurrentWeather() {
+function CurrentWeather({zipCode}) {
 	const [currentTemp, setCurrentTemp] = useState(null); // Initialize with null
 	const [CurrentCity, setCurrentCity] = useState();
+	const [CurrentCondition, setCurrentCondition] = useState();
 
 	useEffect(() => {
 		const url =
-			"https://api.weatherapi.com/v1/current.json?key=6be74bb2ba6f4ad6a3121019231208 &q=65807&aqi=no"; // Replace with your API key
+			`https://api.weatherapi.com/v1/current.json?key=6be74bb2ba6f4ad6a3121019231208 &q=${zipCode}&aqi=no`; // Replace with your API key
 
 		const fetchData = async () => {
 			try {
@@ -18,6 +19,7 @@ function CurrentWeather() {
 				if (data.current && data.current.temp_f) {
 					setCurrentTemp(data.current.temp_f); // Set the temperature value
 					setCurrentCity(data.location.name);
+					setCurrentCondition(data.current.condition.text);
 				}
 			} catch (error) {
 				console.log("error", error);
@@ -25,14 +27,15 @@ function CurrentWeather() {
 		};
 
 		fetchData();
-	}, []);
+	}, [zipCode]);
 
 	return (
 		<section className="current-container">
-			<h1>Current temperature in {CurrentCity}</h1>
+			<h1>Current conditions in {CurrentCity}</h1>
 			<h1 id="current-temp">
 				{currentTemp !== null ? `${currentTemp}°F` : "Loading..."}
 			</h1>
+			<h1>{CurrentCondition}</h1>
 		</section>
 	);
 }

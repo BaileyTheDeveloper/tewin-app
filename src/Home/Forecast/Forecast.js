@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./forecast.css";
 
-function Forecast() {
+function Forecast({ zipCode }) {
 	const [Forecast, setForecast] = useState([]);
-	const [CurrentCity, setCurrentCity] = useState();
 
 	useEffect(() => {
-		const url =
-			"https://api.weatherapi.com/v1/forecast.json?key=6be74bb2ba6f4ad6a3121019231208 &q=65807&days=3&aqi=no&alerts=no";
+		const url = `https://api.weatherapi.com/v1/forecast.json?key=6be74bb2ba6f4ad6a3121019231208&q=${zipCode}&days=5&aqi=no&alerts=no`;
 
 		const fetchData = async () => {
 			try {
@@ -16,7 +14,8 @@ function Forecast() {
 				console.log(data);
 
 				if (data.forecast && data.forecast.forecastday) {
-					setForecast(data.forecast.forecastday);
+					const nextThreeDays = data.forecast.forecastday.slice(1, 4);
+					setForecast(nextThreeDays);
 				}
 			} catch (error) {
 				console.log("error", error);
@@ -24,11 +23,18 @@ function Forecast() {
 		};
 
 		fetchData();
-	}, []);
+	}, [zipCode]);
 
 	const formatDate = (dateStr) => {
-		const dateObj = new Date(dateStr);
-		return dateObj.toLocaleString("default", {
+		// Create a Date object in UTC
+		const utcDate = new Date(dateStr);
+
+		// Convert to the local time zone
+		const localDate = new Date(
+			utcDate.getTime() + utcDate.getTimezoneOffset() * 60000
+		);
+
+		return localDate.toLocaleString("default", {
 			month: "short",
 			day: "numeric",
 		});
@@ -40,9 +46,6 @@ function Forecast() {
 				<div className="forecastContainer" key={day.date}>
 					<h1 className="forecastHeader">{formatDate(day.date)}</h1>
 					<h1 className="forecastHeader">High temp: {day.day.maxtemp_f}°F</h1>
-					{day.day.maxtemp_f > 75 && (
-						<h2 className="forecastHeader">Wear shorts!</h2>
-					)}
 				</div>
 			))}
 		</div>
