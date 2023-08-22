@@ -23,19 +23,24 @@ function Landing() {
 		};
 	}, []);
 
+	// Conditionally apply the transform property based on screen size
+	const isDesktop = window.innerWidth >= 1024; // Define your desktop breakpoint
+	const transformStyle = isDesktop
+		? {
+				transform: `translate(${position.x}px, ${position.y}px)`,
+		  }
+		: {};
+
 	return (
 		<div className="landingPage">
-			<Link to="/tewin-app/home" className="overlayLink">
-				<h1 className="overlayText">Enter</h1>
-			</Link>
+			<div className="enter-wrapper">
+				<Link to="/tewin-app/home" className="overlayLink">
+					<h1 className="overlayText">Enter</h1>
+				</Link>
+			</div>
 			<div className="imageWrapper">
-				<div
-					className="imageContainer"
-					style={{
-						transform: `translate(${position.x}px, ${position.y}px)`,
-					}}
-				>
-					<img src={cloud} alt="cloud"/>
+				<div className="imageContainer" style={transformStyle}>
+					<img src={cloud} alt="cloud" />
 				</div>
 			</div>
 		</div>

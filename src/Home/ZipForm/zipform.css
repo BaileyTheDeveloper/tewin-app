@@ -1,21 +1,15 @@
-
-
-.zip-form-container{
-	padding-top: 150px;
-	padding-bottom: 0px;
-	margin-bottom: 0px;
+.zip-form-container {
+	padding-top: 15px;
+	margin-right: 15px;
 }
 
 form {
 	color: white;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	text-align: center;
+	justify-content: right;
 }
 
-.zipInput{
+.zipInput {
 	width: 10vw;
 }
 .zipSubmit {
@@ -24,5 +18,10 @@ form {
 	width: 100px;
 	font-size: 24px;
 	border-radius: 8px 0px 8px 0px;
-	margin-top: 2vh;
+	margin-left: 15px;
+}
+
+.zipSubmit:hover {
+	cursor: pointer;
+	color: rgb(142, 169, 238);
 }

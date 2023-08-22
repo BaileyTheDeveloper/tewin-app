@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./currentweather.css";
 
-function CurrentWeather({zipCode}) {
+function CurrentWeather({ zipCode }) {
 	const [currentTemp, setCurrentTemp] = useState(null); // Initialize with null
 	const [CurrentCity, setCurrentCity] = useState();
 	const [CurrentCondition, setCurrentCondition] = useState();
 
 	useEffect(() => {
-		const url =
-			`https://api.weatherapi.com/v1/current.json?key=6be74bb2ba6f4ad6a3121019231208 &q=${zipCode}&aqi=no`; // Replace with your API key
+		const url = `https://api.weatherapi.com/v1/current.json?key=6be74bb2ba6f4ad6a3121019231208 &q=${zipCode}&aqi=no`; // Replace with your API key
 
 		const fetchData = async () => {
 			try {
