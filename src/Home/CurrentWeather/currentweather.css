@@ -16,3 +16,11 @@
 #current-temp {
 	font-size: 88px;
 }
+
+@media (max-width: 1023px) {
+	.current-container {
+		width: auto;
+		margin-left: auto;
+		padding-bottom: 5vh;
+	}
+}

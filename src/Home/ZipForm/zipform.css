@@ -10,7 +10,7 @@ form {
 }
 
 .zipInput {
-	width: 10vw;
+	width: 15vw;
 }
 .zipSubmit {
 	background-color: rgba(90, 110, 161, 1);
@@ -24,4 +24,10 @@ form {
 .zipSubmit:hover {
 	cursor: pointer;
 	color: rgb(142, 169, 238);
+}
+
+@media (max-width: 1023px) {
+	.zipInput{
+		width: 50vw;
+	}
 }

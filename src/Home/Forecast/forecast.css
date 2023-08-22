@@ -22,3 +22,11 @@
 	flex-direction: column;
 	justify-content: space-evenly;
 }
+
+@media (max-width: 1023px) {
+	.forecastWrapper{
+		display: flex;
+		flex-direction: column;
+	}
+	
+}
