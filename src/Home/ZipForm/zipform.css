@@ -30,4 +30,8 @@ form {
 	.zipInput{
 		width: 50vw;
 	}
+	.zipSubmit{
+		padding-right: auto;
+		width: 33vw;
+	}
 }
